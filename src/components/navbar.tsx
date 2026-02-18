@@ -12,7 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 
 export function Navbar() {
   const { setTheme } = useTheme()
@@ -110,6 +110,7 @@ export function Navbar() {
                 </Button>
               </SheetTrigger>
               <SheetContent>
+                <SheetTitle className="sr-only">Navigation menu</SheetTitle>
                 <div className="flex flex-col space-y-4 mt-4">
                   {navigation.map((item) => (
                     <Link
