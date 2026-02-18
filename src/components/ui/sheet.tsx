@@ -13,6 +13,7 @@ const SheetTrigger = SheetPrimitive.Trigger
 
 const SheetClose = SheetPrimitive.Close
 
+const SheetTitle = SheetPrimitive.Title
 
 const SheetPortal = ({ ...props }: SheetPrimitive.DialogPortalProps) => (
   <SheetPrimitive.Portal {...props} />
@@ -83,5 +84,6 @@ export {
   Sheet,
   SheetTrigger,
   SheetContent,
+  SheetTitle,
   SheetClose,
 }
