@@ -39,7 +39,7 @@ export function EventsHero() {
             <Button
               size="sm"
               variant="outline"
-              className="gap-1.5 rounded-full h-9 px-5 text-sm"
+              className="gap-1.5 rounded-full h-9 px-5 text-sm hover:bg-primary/10 hover:text-primary"
             >
               <Play className="h-3.5 w-3.5" />
               Highlights

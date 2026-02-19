@@ -137,7 +137,7 @@ export function EventRegistrationModal({
                   type="button"
                   variant="outline"
                   onClick={() => handleClose(false)}
-                  className="sm:mr-auto"
+                  className="sm:mr-auto hover:bg-primary/10 hover:text-primary"
                 >
                   Cancel
                 </Button>

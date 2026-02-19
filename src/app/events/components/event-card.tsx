@@ -98,7 +98,7 @@ export function EventCard({ event, onRegister }: EventCardProps) {
               <Button
                 size="sm"
                 variant="outline"
-                className="min-h-[44px] sm:h-8 sm:min-h-0 px-3 text-xs rounded-lg"
+                className="min-h-[44px] sm:h-8 sm:min-h-0 px-3 text-xs rounded-lg hover:bg-primary/10 hover:text-primary"
               >
                 Share
               </Button>
@@ -108,14 +108,14 @@ export function EventCard({ event, onRegister }: EventCardProps) {
               <Button
                 size="sm"
                 variant="outline"
-                className="flex-1 min-h-[44px] sm:h-8 sm:min-h-0 text-xs rounded-lg gap-1"
+                className="flex-1 min-h-[44px] sm:h-8 sm:min-h-0 text-xs rounded-lg gap-1 hover:bg-primary/10 hover:text-primary"
               >
                 <Video className="h-3 w-3" /> Watch
               </Button>
               <Button
                 size="sm"
                 variant="ghost"
-                className="min-h-[44px] sm:h-8 sm:min-h-0 px-3 text-xs rounded-lg"
+                className="min-h-[44px] sm:h-8 sm:min-h-0 px-3 text-xs rounded-lg hover:bg-primary/10 hover:text-primary"
               >
                 Photos
               </Button>

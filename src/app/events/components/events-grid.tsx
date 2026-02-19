@@ -32,7 +32,7 @@ export function EventsGrid({ events, onRegister }: EventsGridProps) {
               variant={filter === "all" ? "default" : "ghost"}
               size="sm"
               onClick={() => setFilter("all")}
-              className="rounded-full px-4 min-h-[40px] sm:h-8 sm:min-h-0 text-xs shrink-0 [touch-action:manipulation]"
+              className="rounded-full px-4 min-h-[40px] sm:h-8 sm:min-h-0 text-xs shrink-0 [touch-action:manipulation] hover:bg-primary/10 hover:text-primary"
             >
               All
             </Button>
@@ -40,7 +40,7 @@ export function EventsGrid({ events, onRegister }: EventsGridProps) {
               variant={filter === "upcoming" ? "default" : "ghost"}
               size="sm"
               onClick={() => setFilter("upcoming")}
-              className="rounded-full px-4 min-h-[40px] sm:h-8 sm:min-h-0 text-xs shrink-0 [touch-action:manipulation]"
+              className="rounded-full px-4 min-h-[40px] sm:h-8 sm:min-h-0 text-xs shrink-0 [touch-action:manipulation] hover:bg-primary/10 hover:text-primary"
             >
               Upcoming
             </Button>
@@ -48,7 +48,7 @@ export function EventsGrid({ events, onRegister }: EventsGridProps) {
               variant={filter === "past" ? "default" : "ghost"}
               size="sm"
               onClick={() => setFilter("past")}
-              className="rounded-full px-4 min-h-[40px] sm:h-8 sm:min-h-0 text-xs shrink-0 [touch-action:manipulation]"
+              className="rounded-full px-4 min-h-[40px] sm:h-8 sm:min-h-0 text-xs shrink-0 [touch-action:manipulation] hover:bg-primary/10 hover:text-primary"
             >
               Past
             </Button>
