@@ -1,0 +1,156 @@
+import { Event, VideoHighlight, Photo } from "@/types/events"
+
+export const events: Event[] = [
+  {
+    id: "1",
+    title: "Hackathon 2024",
+    date: "March 15, 2024",
+    time: "9:00 AM - 5:00 PM",
+    location: "Computer Science Building",
+    image: "/projects/aistudy.jpeg",
+    type: "upcoming",
+    description: "24-hour coding challenge to build innovative solutions",
+    longDescription:
+      "Join us for an intensive 24-hour coding challenge where teams collaborate to build innovative tech solutions. This hackathon brings together students, professionals, and tech enthusiasts to solve real-world problems using cutting-edge technologies.",
+    speakers: ["Dr. John Mwansa", "Sarah Chen (Google)", "Prof. Alice Banda"],
+    attendees: 87,
+    capacity: 120,
+    highlights: [
+      "Team-based coding challenge",
+      "Mentorship from industry experts",
+      "Prizes worth $5,000",
+      "Networking opportunities",
+      "Free meals and refreshments",
+    ],
+    prerequisites: [
+      "Basic programming knowledge",
+      "Laptop with dev environment",
+      "Team of 2-4 members (or join onsite)",
+    ],
+    tags: ["Coding", "Competition", "Networking", "Prizes"],
+  },
+  {
+    id: "2",
+    title: "Team Building Workshop",
+    date: "February 28, 2024",
+    time: "2:00 PM - 4:00 PM",
+    location: "Main Hall",
+    image: "/projects/gps.jpeg",
+    type: "past",
+    description: "Collaborative activities and networking session",
+    longDescription:
+      "An engaging workshop designed to strengthen team collaboration, communication skills, and leadership abilities through interactive activities and real-world scenarios.",
+    speakers: ["Dr. Michael Zulu", "Jane Phiri (Team Coach)"],
+    attendees: 65,
+    capacity: 80,
+    highlights: [
+      "Interactive group activities",
+      "Leadership exercises",
+      "Communication workshops",
+      "Networking session",
+      "Certificate of participation",
+    ],
+    prerequisites: ["Open to all members", "No prior experience needed"],
+    tags: ["Workshop", "Teamwork", "Leadership", "Networking"],
+  },
+  {
+    id: "3",
+    title: "AI & Machine Learning Summit",
+    date: "April 22, 2024",
+    time: "10:00 AM - 3:00 PM",
+    location: "University Auditorium",
+    image: "/projects/aistudy.jpeg",
+    type: "upcoming",
+    description: "Explore the latest trends in AI and machine learning",
+    longDescription:
+      "Dive deep into the world of artificial intelligence and machine learning with expert speakers from leading tech companies. Learn about the latest developments, practical applications, and future trends in AI technology.",
+    speakers: [
+      "Dr. Emmanuel Sakala",
+      "David Martinez (Microsoft AI)",
+      "Prof. Grace Tembo",
+    ],
+    attendees: 142,
+    capacity: 200,
+    highlights: [
+      "Keynote speeches from AI experts",
+      "Hands-on ML workshops",
+      "Panel discussions",
+      "Demo of latest AI projects",
+      "Networking lunch included",
+    ],
+    prerequisites: ["Interest in AI/ML", "Laptop recommended for workshops"],
+    tags: ["AI", "Machine Learning", "Tech Talk", "Workshops"],
+  },
+]
+
+export const videoHighlights: VideoHighlight[] = [
+  {
+    id: "1",
+    title: "Google Dev Experts Talk with Sam Patton",
+    thumbnail: "/projects/aistudy.jpeg",
+    duration: "45:30",
+    views: "1.2k",
+  },
+  {
+    id: "2",
+    title: "Recorded Intro Meetup Highlights",
+    thumbnail: "/projects/gps.jpeg",
+    duration: "30:15",
+    views: "850",
+  },
+  {
+    id: "3",
+    title: "Tech Career Bootcamp Conference",
+    thumbnail: "/projects/aistudy.jpeg",
+    duration: "1:15:20",
+    views: "2.1k",
+  },
+  {
+    id: "4",
+    title: "Web Development Bootcamp Showcase",
+    thumbnail: "/projects/gps.jpeg",
+    duration: "52:10",
+    views: "1.8k",
+  },
+  {
+    id: "5",
+    title: "Annual General Meeting Highlights",
+    thumbnail: "/projects/aistudy.jpeg",
+    duration: "38:45",
+    views: "920",
+  },
+  {
+    id: "6",
+    title: "Blockchain & Web3 Workshop",
+    thumbnail: "/projects/gps.jpeg",
+    duration: "1:05:30",
+    views: "1.5k",
+  },
+]
+
+export const photoRows: Photo[][] = [
+  [
+    { id: 1, src: "/projects/aistudy.jpeg", alt: "Hackathon 2024" },
+    { id: 2, src: "/projects/gps.jpeg", alt: "GPS Workshop" },
+    { id: 3, src: "/projects/aistudy.jpeg", alt: "AI Study Group" },
+    { id: 4, src: "/projects/gps.jpeg", alt: "Tech Talk" },
+    { id: 5, src: "/projects/aistudy.jpeg", alt: "Coding Session" },
+    { id: 6, src: "/projects/gps.jpeg", alt: "Demo Day" },
+  ],
+  [
+    { id: 7, src: "/projects/gps.jpeg", alt: "Team Building" },
+    { id: 8, src: "/projects/aistudy.jpeg", alt: "Workshop" },
+    { id: 9, src: "/projects/gps.jpeg", alt: "Networking Night" },
+    { id: 10, src: "/projects/aistudy.jpeg", alt: "Guest Speaker" },
+    { id: 11, src: "/projects/gps.jpeg", alt: "Awards Ceremony" },
+    { id: 12, src: "/projects/aistudy.jpeg", alt: "Panel Discussion" },
+  ],
+  [
+    { id: 13, src: "/projects/aistudy.jpeg", alt: "Career Fair" },
+    { id: 14, src: "/projects/gps.jpeg", alt: "Bootcamp" },
+    { id: 15, src: "/projects/aistudy.jpeg", alt: "Open Source Day" },
+    { id: 16, src: "/projects/gps.jpeg", alt: "Mentorship Meet" },
+    { id: 17, src: "/projects/aistudy.jpeg", alt: "Project Showcase" },
+    { id: 18, src: "/projects/gps.jpeg", alt: "Social Event" },
+  ],
+]

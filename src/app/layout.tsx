@@ -1,9 +1,5 @@
-// layout.tsx
-import '@/app/globals.css'  // Try this import
-import '../app/globals.css' // And this one
+import '@/app/globals.css'
 
-// Rest of your layout.tsx code...
-// app/layout.tsx
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
