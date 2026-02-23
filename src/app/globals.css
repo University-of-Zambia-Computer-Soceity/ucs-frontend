@@ -94,63 +94,29 @@
     background-image: url("/pattern.jpeg")  }
 }
 
-/* Typography */
-@font-face {
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  src: url('/fonts/FiraCode-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @layer base {
   html {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: var(--font-josefin), 'Josefin Sans', sans-serif;
     color: var(--ucs-offwhite);
   }
 
   code {
-    font-family: 'Fira Code', monospace;
+    font-family: var(--font-fira-code), 'Fira Code', monospace;
   }
 }
 
 /* Custom styles for smaller screens */
 @media (max-width: 760px) {
-    .carousel-card {
+  .carousel-card {
     margin: 0 auto;
   }
   .carousel-container {
-  position: relative;
-  overflow: hidden;
-  gap: 1rem; /* Add some spacing */
-}
-.h1 .h2 .h3 .h4 .h5 .h6{
-  font-family: 'Josefin Sans';
-  src: url('/fonts/JosefinSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-	}
-.p {
-  font-family: 'Poppins';
-  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+    position: relative;
+    overflow: hidden;
+    gap: 1rem;
+  }
 }

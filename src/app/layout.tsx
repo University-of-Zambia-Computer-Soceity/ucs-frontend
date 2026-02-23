@@ -1,13 +1,28 @@
 import '@/app/globals.css'
 
-import { Inter } from "next/font/google";
+import { Poppins, Josefin_Sans, Fira_Code } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] })
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+})
+
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-josefin",
+})
+
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-fira-code",
+})
 
 export default function RootLayout({
   children,
@@ -21,13 +36,9 @@ export default function RootLayout({
         <link rel="icon" href="/logo.ico" />
         <meta name="description" content="Welcome to the University of Zambia Computer Science Society - Empowering future tech leaders" />
       </head>
-      <body className={cn("min-h-screen font-sans antialiased", inter.className)}>
+      <body className={cn("min-h-screen font-sans antialiased", poppins.variable, josefinSans.variable, firaCode.variable)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="relative flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
+          {children}
           <Toaster />
         </ThemeProvider>
       </body>

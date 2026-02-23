@@ -3,7 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
-import { MoonIcon, SunIcon, Menu, ExternalLink } from 'lucide-react'
+import { MoonIcon, SunIcon, Menu, ExternalLink, LogIn } from 'lucide-react'
 import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import {
@@ -97,6 +97,12 @@ export function Navbar() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
+              <Button variant="outline" size="sm" asChild>
+                <Link href="/login" className="flex items-center gap-1.5">
+                  <LogIn className="h-4 w-4" />
+                  Login
+                </Link>
+              </Button>
             </div>
           </div>
 
@@ -136,6 +142,18 @@ export function Navbar() {
                       {item.icon}
                     </a>
                   ))}
+                  <div className="pt-4 border-t">
+                    <Button variant="outline" size="sm" asChild className="w-full">
+                      <Link
+                        href="/login"
+                        onClick={() => setIsOpen(false)}
+                        className="flex items-center justify-center gap-1.5"
+                      >
+                        <LogIn className="h-4 w-4" />
+                        Login
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
