@@ -3,7 +3,6 @@
 import { useState } from "react"
 import Image from "next/image"
 import { Pencil, Plus, X } from "lucide-react"
-import { cn } from "@/lib/utils"
 
 const initialSkills = [
   "Python",

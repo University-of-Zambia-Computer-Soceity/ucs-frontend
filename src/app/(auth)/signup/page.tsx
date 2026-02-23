@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Mail, Eye, EyeOff, Moon } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -58,7 +58,7 @@ export default function SignupPage() {
             <div className="w-full max-w-[480px] flex flex-col items-center form-animate">
               {/* Logo */}
               <div className="mb-5">
-                <img
+                <Image
                   src="/logo.png"
                   alt="UCS Logo"
                   width={80}
