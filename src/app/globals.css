@@ -97,6 +97,12 @@
 @layer base {
   html {
     font-family: var(--font-poppins), 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -107,6 +113,14 @@
   code {
     font-family: var(--font-fira-code), 'Fira Code', monospace;
   }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Custom styles for smaller screens */

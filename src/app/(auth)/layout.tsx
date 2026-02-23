@@ -4,7 +4,7 @@ export default function AuthLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="h-screen overflow-hidden overflow-x-hidden">
       {children}
     </div>
   )

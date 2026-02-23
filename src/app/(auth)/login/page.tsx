@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Mail, Eye, EyeOff, Moon, Home } from "lucide-react"
+import { useRouter } from "next/navigation"
+import { Mail, Eye, EyeOff, Moon } from "lucide-react"
 import { AnimatePresence, motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
 
 interface Phrase {
   text: string
@@ -14,16 +14,16 @@ interface Phrase {
 }
 
 const PHRASES: Phrase[] = [
-  { text: "Welcome", className: "text-[3.2rem] text-black" },
-  { text: "to", className: "text-[2.4rem] text-gray-400" },
+  { text: "Welcome", className: "text-[2.2rem] sm:text-[3.2rem] text-black" },
+  { text: "to", className: "text-[1.8rem] sm:text-[2.4rem] text-gray-400" },
   {
     text: "University of Zambia",
-    className: "text-[2rem]",
+    className: "text-[1.4rem] sm:text-[2rem]",
     gradient: "linear-gradient(135deg, #006B3F 0%, #C8A851 100%)",
   },
   {
     text: "Computer Society",
-    className: "text-[2.2rem]",
+    className: "text-[1.5rem] sm:text-[2.2rem]",
     gradient: "linear-gradient(135deg, #2C8992 0%, #FF9000 100%)",
   },
 ]
@@ -76,6 +76,7 @@ function RotatingText() {
 }
 
 export default function LoginPage() {
+  const router = useRouter()
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -131,22 +132,7 @@ export default function LoginPage() {
 
         {/* Right Section - Login Form (60%) — scrollable */}
         <div className="flex-1 h-screen overflow-y-auto relative bg-white">
-          {/* Home Button — pinned top-right */}
-          <div className="absolute top-5 right-6 z-10">
-            <Button
-              variant="outline"
-              size="sm"
-              asChild
-              className="border-[#2C8992] text-[#2C8992] hover:bg-[#2C8992]/10 transition-all duration-300"
-            >
-              <Link href="/" className="flex items-center gap-1.5">
-                <Home className="w-4 h-4" />
-                Home
-              </Link>
-            </Button>
-          </div>
-
-          <div className="min-h-full flex flex-col items-center justify-center py-10 px-10 md:px-0">
+          <div className="min-h-full flex flex-col items-center justify-center py-10 px-5 sm:px-10 md:px-0">
             <div className="w-full max-w-[400px] flex flex-col items-center form-animate">
 
               {/* Logo */}
@@ -237,7 +223,8 @@ export default function LoginPage() {
                 {/* Login Button */}
                 <div className="pt-4">
                   <button
-                    className="login-btn w-[220px] h-[52px] bg-[#2C8992] hover:bg-[#257a83] text-white font-bold text-[15px] rounded-lg block mx-auto font-display tracking-wider"
+                    onClick={() => router.push("/dashboard")}
+                    className="login-btn w-full sm:w-[220px] h-[52px] bg-[#2C8992] hover:bg-[#257a83] text-white font-bold text-[15px] rounded-lg block mx-auto font-display tracking-wider"
                   >
                     Login
                   </button>
@@ -245,9 +232,7 @@ export default function LoginPage() {
 
                 {/* Sign Up Link */}
                 <div className="text-center pt-1">
-                  <span
-                    className="text-gray-400 text-[13px] font-display"
-                  >
+                  <span className="text-gray-400 text-[13px] font-display">
                     Don&apos;t have an account?{" "}
                   </span>
                   <Link
