@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/hero-section"
 import { FAQSection } from "@/components/faq-section"
 import { SignUpSection } from "@/components/sign-up-section"
 import LatestEventsSection from "@/components/latestevents"
+import { AlumniSection } from "@/components/alumni-section"
 
 import { Code2, Users, Calendar, Trophy } from 'lucide-react'
 
@@ -58,6 +59,8 @@ export default function Home() {
       </section>
 
       <LatestEventsSection />
+
+      <AlumniSection />
 
       <FAQSection />
       <SignUpSection />

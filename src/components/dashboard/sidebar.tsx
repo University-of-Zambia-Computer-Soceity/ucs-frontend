@@ -86,25 +86,6 @@ export function DashboardSidebar({ open, onClose }: DashboardSidebarProps) {
             )
           })}
         </nav>
-
-        {/* Upgrade CTA */}
-        <div className="px-3 pb-5">
-          <div className="bg-gradient-to-br from-[#0d1b2a] to-[#1b3a4b] rounded-xl p-4 text-white">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-cyan-300 mb-1">
-              Upgrade
-            </p>
-            <p className="text-[12px] leading-snug mb-3 opacity-90">
-              Affiliate with UCS ✨😊❤️
-            </p>
-            <Link
-              href="/dashboard/affiliation"
-              onClick={onClose}
-              className="block text-center bg-cyan-400 hover:bg-cyan-300 text-gray-900 text-[12px] font-bold py-1.5 rounded-lg transition-colors"
-            >
-              Learn More
-            </Link>
-          </div>
-        </div>
       </aside>
     </>
   )

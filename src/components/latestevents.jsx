@@ -30,7 +30,7 @@ const LatestEventsSection = () => {
                 Developer tech expo to learn and grow in the industry of tech
               </p>
               <Button variant="outline" asChild>
-                <Link href="/events" className="inline-flex items-center">
+                <Link href="/events/1" className="inline-flex items-center">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -53,7 +53,7 @@ const LatestEventsSection = () => {
                 48-hour challenge to build cutting-edge AI applications
               </p>
               <Button variant="outline" asChild>
-                <Link href="/events" className="inline-flex items-center">
+                <Link href="/events/2" className="inline-flex items-center">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -76,7 +76,7 @@ const LatestEventsSection = () => {
                 Game developers day where relaxation and innovation is enjoyed 
               </p>
               <Button variant="outline" asChild>
-                <Link href="/events" className="inline-flex items-center">
+                <Link href="/events/3" className="inline-flex items-center">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

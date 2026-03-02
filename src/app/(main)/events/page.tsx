@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Event } from "@/types/events"
-import { events } from "@/lib/data/events"
+import { events } from "../../../lib/data/events"
 import { EventsHero } from "./components/events-hero"
 import { PhotoGallery } from "./components/photo-gallery"
 import { EventsGrid } from "./components/events-grid"

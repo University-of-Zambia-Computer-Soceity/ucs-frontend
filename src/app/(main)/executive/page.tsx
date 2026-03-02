@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, MotionStyle } from "framer-motion";
-import AlumniSection from "./alumni";
+
 
 export default function ExecutivePage() {
   const executives = [
@@ -234,7 +234,7 @@ const getCardStyles = (offset: number): MotionStyle => ({
     </section>
 
 
-      <AlumniSection />
+      
 
       {/* Contact CTA */}
       <section className="py-12 md:py-24 bg-muted bg-pattern bg-cover bg-center relative">

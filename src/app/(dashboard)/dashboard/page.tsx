@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
 import { MapPin } from "lucide-react"
 
 const upcomingEvents = [
@@ -13,8 +12,8 @@ const upcomingEvents = [
     date: "Oct 24, 14:00 PM",
     location: "CS Lab 2 / Virtual",
     image: "/logo.png",
-    actionLabel: "Join Session",
-    actionStyle: "bg-[#2C8992] text-white hover:bg-[#257a83]",
+    actionLabel: "view details",
+    actionStyle: "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50",
   },
   {
     id: 2,
@@ -24,7 +23,7 @@ const upcomingEvents = [
     date: "Oct 28, 09:00 AM",
     location: "Main Library Café",
     image: "/logo.png",
-    actionLabel: "View Details",
+    actionLabel: "view details",
     actionStyle: "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50",
   },
 ]
@@ -71,12 +70,6 @@ export default function DashboardPage() {
               Upcoming Registered Events
             </h2>
           </div>
-          <Link
-            href="/dashboard/events"
-            className="text-[12px] md:text-[13px] text-[#2C8992] font-medium hover:underline font-display flex-shrink-0"
-          >
-            View All
-          </Link>
         </div>
 
         <div className="space-y-3">

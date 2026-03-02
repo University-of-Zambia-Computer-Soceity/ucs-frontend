@@ -44,8 +44,8 @@ const currentWeekEvents = [
     date: "Oct 24, 14:00 PM",
     location: "CS Lab 2 / Virtual",
     image: "/logo.png",
-    actionLabel: "Join Session",
-    actionStyle: "bg-[#2C8992] text-white hover:bg-[#257a83]",
+    actionLabel: "view details",
+    actionStyle: "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ const currentWeekEvents = [
     date: "Oct 28, 09:00 AM",
     location: "Main Library Café",
     image: "/logo.png",
-    actionLabel: "View Details",
+    actionLabel: "view details",
     actionStyle: "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50",
   },
 ]
@@ -69,7 +69,7 @@ const nextMonthEvents = [
     date: "Nov 04, 11:30 AM",
     location: "Auditorium A",
     image: "/logo.png",
-    actionLabel: "Manage RSVP",
+    actionLabel: "view details",
     actionStyle: "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50",
   },
 ]
