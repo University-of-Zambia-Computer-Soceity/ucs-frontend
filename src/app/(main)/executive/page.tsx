@@ -10,89 +10,99 @@ import { motion, AnimatePresence, MotionStyle } from "framer-motion";
 
 export default function ExecutivePage() {
   const executives = [
+ {
+  name: "Peter K. Lubasi",
+  position: "President",
+  image: "/execs/peter-lubasi.jpeg", // change this to the actual image path when you add the photo
+  bio: "Peter K. Lubasi serves as the President. He is passionate about technology, collaboration, and leading innovative initiatives within the team.",
+  email: "peterkay862@gmail.com",
+  linkedin: "https://www.linkedin.com/in/peter-k-lubasi-801103335",
+  github: "https://github.com/PeterKay86"
+},
+   {
+  name: "Kasonde Bbuku",
+  position: "Vice President",
+  image: "/execs/kasonde-bbuku.jpeg", // replace with the actual image path when you add the photo
+  bio: "Kasonde Bbuku serves as the Vice President, contributing to leadership, collaboration, and technical development within the team.",
+  email: "kasondebbuku1@gmail.com",
+  linkedin: "https://www.linkedin.com/in/kasonde-bbuku-598a10345",
+  github: "https://github.com/kasondebbuku-spec"
+},
     {
-      name: "Chibwanta Jake Mukonka",
-      position: "President",
-      image: "/execs/jake.jpeg",
-      bio: "Computer Science final year student with a passion for systems engineering, AI and machine learning.",
-      email: "cjmukonka@gmail.com",
-      linkedin: "http://www.linkedin.com/in/chibwanta-mukonka-92663a290",
-      github: "https://github.com/JakeSparrow1",
-    },
+  name: "Samuel Chibinji Mwanza",
+  position: "Secretary",
+  image: "/execs/samuel-chibinji-mwanza.jpeg", // replace when you add the actual photo
+  bio: "Samuel Chibinji Mwanza serves as the Secretary, responsible for coordinating communication, maintaining records, and supporting the organization’s administrative activities.",
+  email: "samuelchibinjimwanza@gmail.com",
+  linkedin: "https://www.linkedin.com/in/samuel-chibinji-mwanza-1437772b4",
+  github: "https://github.com/chibinji"
+},
+   {
+  name: "Jimmy James",
+  position: "Treasurer",
+  image: "/execs/jimmy james sakala.jpeg", // replace when you add the real photo
+  bio: "Jimmy James serves as the Treasurer, responsible for managing financial records, budgeting, and ensuring proper financial coordination within the team.",
+  email: "jamessakala494@gmail.com",
+  linkedin: "https://www.linkedin.com/in/jimmy-james-331b46385",
+  github: ""
+},
     {
-      name: "Hellen Zulu",
-      position: "Vice President",
-      image: "/execs/hellen.png",
-      bio: "Software Engineering student focused on web development and UI/UX design.",
-      email: "hellenzulu004@gmail.com",
-      linkedin: "https://www.linkedin.com/in/hellen-zulu-9a6a83234",
-      github: "https://github.com/hellen004",
-    },
+  name: "Humphrey Chama",
+  position: "Project Coordinator",
+  image: "/execs/humphrey-chama.jpeg", // replace when you add the real photo
+  bio: "Humphrey Chama serves as the Project Coordinator, helping organize project activities, coordinate team efforts, and ensure smooth progress across initiatives.",
+  email: "humphreychama84@gmail.com",
+  linkedin: "https://www.linkedin.com/in/humphrey-chama-a5b049344",
+  github: "https://github.com/Am3-ch"
+},
     {
-      name: "Nephas Gomezyani Kango",
-      position: "Secretary",
-      image: "/execs/nephas.jpg",
-      bio: "Final-year student specializing in software engineering and full stack development.",
-      email: "Nephaskango@gmail.com",
-      linkedin: "https://www.linkedin.com/in/nephas-kango-0676b2216/",
-      github: "https://github.com/nephas10",
-    },
-    {
-      name: "Faith selita Nambule",
-      position: "Treasurer",
-      image: "/execs/faith.jpg",
-      bio: "Final year cyber-security and netwroking student with experience in project management and finance.",
-      email: "selitafn@gmail.com",
-      linkedin: "https://www.linkedin.com/in/faith-nambule-545b96298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      github: "#",
-    },
-    {
-      name: "Enos Malunga",
-      position: "Events and Project Coordinator",
-      image: "/execs/enos.jpg",
-      bio: "Third-year student passionate about organizing tech events and workshops.",
-      email: "#",
-      linkedin: "#",
-      github: "#",
-    },
-    {
-      name: "Deborah Nyirenda",
-      position: "Web master",
-      image: "/execs/deborah.jpg",
-      bio: "Third year student specializing in full-stack development and cloud computing.",
-      email: "nyirendadeborahbupe126@gmail.com",
-      linkedin: "http://linkedin.com/in/deborah-bupe-nyirenda-663370351",
-      github: "https://github.com/deborah-bupe",
-    },
+  name: "Vanessa Banda",
+  position: "Webmaster",
+  image: "/execs/vanessa-banda.jpeg", // replace when you add the actual photo
+  bio: "Vanessa Banda serves as the Webmaster, responsible for managing the website, maintaining its functionality, and ensuring a smooth digital experience for users.",
+  email: "bandavanessa166@gmail.com",
+  linkedin: "https://www.linkedin.com/in/vanessa-banda-962b27252",
+  github: "https://github.com/vanessa200321"
+},
 	{
-      name: "Stanley Kalenga",
-      position: "Publicity Secretary",
-      image: "/execs/stanley_kalenga.jpeg",
-      bio: "Final year student specializing cyber security and networking.",
-      email: "stanleykalenga4@gmail.com",
-      linkedin: "https://www.linkedin.com/in/stanley-kalenga-265b08266?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bdc0%2B6ltXS9iZkvbA5F0Wow%3D%3D",
-      github: "#",
-    },
+  name: "Deborah Kumwenda",
+  position: "Publicity Secretary",
+  image: "/execs/deborah-kumwenda.jpeg", // replace when you add the actual photo
+  bio: "Deborah Kumwenda serves as the Publicity Secretary, responsible for managing public communications, promoting activities, and ensuring the organization maintains a strong public presence.",
+  email: "deborahkumwenda66@gmail.com",
+  linkedin: "https://www.linkedin.com/in/deborah-kumwenda-326052369",
+  github: "https://github.com/deborah-codes1"
+},
 
 {
-      name: "Mwiza Marie Mfuni",
-      position: "Commitee member",
-      image: "/execs/mwiza.jpg",
-      bio: "Final year student specializing cyber security and networking.",
-      email: "#",
-      linkedin: "https://www.linkedin.com/in/mwiza-mfuni-a78a29263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      github: "#",
-    },
+  name: "Enoch Simfukwe",
+  position: "Committee Member",
+  image: "/execs/enoch-simfukwe.jpeg", // replace with your real photo
+  bio: "Enoch Simfukwe is a Committee Member contributing to technical initiatives, development, and collaborative innovation within the team.",
+  email: "simfukweenoch@gmail.com",
+  linkedin: "https://www.linkedin.com/in/enoch-simfukwe-7b230a371",
+  github: "https://github.com/en236gh"
+},
 
 {
-      name: "Peter K. Lubasi",
-      position: "Commitee member",
-      image: "/execs/peter.jpg",
-      bio: "Third year student specializing cyber security and networking.",
-      email: "peterklubasi68@gmail.com",
-      linkedin: "https://www.linkedin.com/in/peter-k-lubasi-801103335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      github: "#",
-    },
+  name: "Stella Sinda",
+  position: "Committee Member",
+  image: "/execs/stella-sinda.jpeg", // replace with the real photo
+  bio: "Stella Sinda serves as a Committee Member, contributing to team initiatives, supporting projects, and collaborating on organizational goals.",
+  email: "stellasinda01@gmail.com",
+  linkedin: "https://www.linkedin.com/in/stella-sinda-180132269",
+  github: "https://github.com/stellasinda"
+},
+{
+  name: "Salem Mutambo",
+  position: "Committee Member",
+  image: "/execs/salem-mutambo.jpg", // replace with actual photo
+  bio: "Salem Mutambo serves as a Committee Member, contributing to team projects, supporting organizational activities, and collaborating on initiatives.",
+  email: "mutambosalem@gmail.com",
+  linkedin: "", // LinkedIn currently unavailable
+  github: "https://github.com/salemmutambo"
+}
+,
 
   ];
 
