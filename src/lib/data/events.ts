@@ -86,6 +86,38 @@ export const events: Event[] = [
     ],
     tags: ["Game Dev", "Expo", "Creativity"],
   },
+  {
+    id: "4",
+    title: "ZNBC Educational Trip",
+    date: "January 18, 2025",
+    time: "2:00 PM - 6:00 PM",
+    location: "ZNBC Studios, Lusaka",
+    image: "/events/znbc-1.jpeg",
+    type: "past",
+    description:
+      "UCS members visited ZNBC Studios for an educational trip, learning about servers, networking infrastructure, and the inner workings of broadcast operations.",
+    longDescription:
+      "The UNZA Computer Science Society organized an educational trip to ZNBC Studios in Lusaka. Members got a first-hand look at the servers, networking infrastructure, and broadcast operations that power Zambia's national television. The trip provided invaluable insights into how technology drives media operations — from studio equipment and signal distribution to the server rooms that keep everything running. It was a fantastic opportunity to connect classroom knowledge with real-world systems.",
+    speakers: [
+      "ZNBC Technical Team",
+      "ZNBC Operations Staff",
+      "UCS Executive Committee",
+    ],
+    attendees: 30,
+    capacity: 30,
+    highlights: [
+      "Tour of ZNBC server rooms and networking infrastructure",
+      "Learning about broadcast operations and signal distribution",
+      "Understanding studio equipment and production workflows",
+      "Behind-the-scenes look at how national TV operates",
+      "Connecting classroom knowledge with real-world systems",
+    ],
+    prerequisites: [
+      "Open to all UCS society members",
+      "Interest in networking, servers, and broadcast technology",
+    ],
+    tags: ["Educational Trip", "ZNBC", "Networking", "Servers"],
+  },
 ]
 
 export const videoHighlights: VideoHighlight[] = [
